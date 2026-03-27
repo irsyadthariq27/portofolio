@@ -10,6 +10,9 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+    build: {
+        outDir: 'dist', // 🔥 INI PENTING
+    },
     server: {
         watch: {
             ignored: ['**/storage/framework/views/**'],
